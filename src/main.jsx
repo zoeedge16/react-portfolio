@@ -4,8 +4,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+import App from './App'
+
 const router = createBrowserRouter({
     path: '/',
-    element: <App />,
-    errorElement: 
+    element: <App />
 })

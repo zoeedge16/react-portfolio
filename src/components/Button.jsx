@@ -5,3 +5,5 @@ function Button (props) {
         <button> </button>
     )
 }
+
+export default Button;

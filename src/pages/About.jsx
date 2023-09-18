@@ -11,7 +11,7 @@ export default function About() {
                         backgroundImage: `url(${photo.image})`,
                         width: '300px',
                         height: '300px',
-                        backgroundSize: 'cover'
+                        backgroundSize: 'cover',
                     }}>
                     </div>
                 </div>

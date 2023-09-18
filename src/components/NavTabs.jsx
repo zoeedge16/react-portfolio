@@ -1,5 +1,6 @@
 import  React  from 'react';
 import { PropTypes } from 'prop-types';
+import '../App.css';
 
 const navTabs = [
     {
@@ -28,9 +29,11 @@ function NavTabs( { setCurrentPage, currentPage }) {
     };
 
     return (
-        <div>
+        <>
+         <div>
             {navTabs.map((item) => (
                 <a 
+                id='nav-tabs'
                 href={item.href}
                 onClick={(e) => handleClick(e, item.name)}
                 key = {item.name}
@@ -39,7 +42,8 @@ function NavTabs( { setCurrentPage, currentPage }) {
                     {item.name}
                 </a>
             ))}
-        </div>
+         </div>
+        </>
     )
 };
 

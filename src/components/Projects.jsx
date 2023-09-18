@@ -1,7 +1,9 @@
-import WeatherApp from '../assets/weather-dashboard.png'
-import PasswordGenerator from '../assets/password-generator.png'
-import GranularGarden from '../assets/granular-garden.png'
-import NoteTaker from '../assets/note-taker.png'
+import WeatherApp from '../assets/weather-dashboard.png';
+import PasswordGenerator from '../assets/password-generator.png';
+import GranularGarden from '../assets/granular-garden.png';
+import NoteTaker from '../assets/note-taker.png';
+import ClassQuiz from '../assets/class-quiz.png';
+import Seo from '../assets/Horiseon-SEO.png'
 
 const projectData = [
     {
@@ -31,6 +33,20 @@ const projectData = [
         image: NoteTaker,
         github: 'https://github.com/zoeedge16/note-taker',
         url: 'https://safe-shelf-80683-3dfb2eba4d8a.herokuapp.com/notes'
+    },
+    {
+        id: 5,
+        name: 'Class Quiz',
+        image: ClassQuiz,
+        github: 'https://github.com/zoeedge16/class-quiz',
+        url: 'https://zoeedge16.github.io/class-quiz/'
+    },
+    {
+        id: 6,
+        name: 'Code Refactor',
+        image: Seo,
+        github: 'https://github.com/zoeedge16/code-refactor-seo',
+        url: 'https://zoeedge16.github.io/code-refactor-seo/'
     }
 
 ]

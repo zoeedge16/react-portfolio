@@ -7,7 +7,12 @@ export default function Portfolio() {
         <div>
             {projectData.map((project) => (
                 <div className="card" key={project.id}>
-                    <div className="card-body" style={{backgroundImage: `url(${project.image})`}}>
+                    <div className="card-body" style={{
+                        backgroundImage: `url(${project.image})`,
+                        width: '300px',
+                        height: '200px',
+                        backgroundSize: 'cover'
+                        }}>
                         <div className="card-link">
                             <a href={project.url}>{project.name}</a>
                             <a href={project.github}>GitHub</a>

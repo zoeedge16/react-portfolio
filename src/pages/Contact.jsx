@@ -1,23 +1,24 @@
-import React from 'react';
-import Instruction from '../components/Instruction'
-import Email from '../components/Email'
-import Button from '../components/Button'
+import { React } from 'react';
 
-
-export default function Contact() {
-    // need to make a form here
-    const [name, setName] = React.useState('');
-    const [email, setEmail] = React.useState('');
-    const [message, setMessage] = React.useState('');
-    const [valid, setValid] = React.useState('');
-    const [instDisplay, setInstDisplay] = React.useState('');
-
-
-
+function Contact({ setCurrentPage, currentPage }) {
+    const handleSubmit = (e, page) => {
+        e.preventDefault();
+        setCurrentPage(page);
+    };
 
     return (
         <div>
-            <form action=""></form>
+            <h2> Contact </h2>
+            <form onSubmit={handleSubmit}>
+                <fieldset>
+                    <div>
+                        <label>Name:</label>
+                        <input type="text" />
+                    </div>
+                </fieldset>
+            </form>
         </div>
     )
 }
+
+export default Contact;

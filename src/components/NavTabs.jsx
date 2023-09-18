@@ -1,4 +1,4 @@
-import { React } from 'react';
+import  React  from 'react';
 import { PropTypes } from 'prop-types';
 
 const navTabs = [
@@ -27,22 +27,17 @@ function NavTabs( { setCurrentPage, currentPage }) {
 
     };
 
-    function currentNav (item, currentPage) {
-        if ( item.name === currentPage ) {
-            return (
-                <a href={item.href} onClick={(e) => handleClick(e, item.name)} key = {item.name}>{item.name}</a>
-            )
-        } else {
-            return (
-                <a href={item.href} onClick={(e) => handleClick(e, item.name)} key = {item.name}>{item.name}</a>
-            )
-        }
-    };
-
     return (
         <div>
             {navTabs.map((item) => (
-                currentNav(item, currentPage)
+                <a 
+                href={item.href}
+                onClick={(e) => handleClick(e, item.name)}
+                key = {item.name}
+                className={item.name === currentPage ? 'active' : ''}
+                >
+                    {item.name}
+                </a>
             ))}
         </div>
     )

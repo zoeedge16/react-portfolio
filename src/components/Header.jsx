@@ -1,8 +1,12 @@
+import { PropTypes } from "prop-types";
+import { NavTabs } from "./NavTabs";
 
-
-function Header () {
+function Header (setCurrentPage, currentPage) {
     return (
-        <h1> Zoe Edge </h1>
+        <div>
+            <h1> Zoe Edge </h1>
+            <NavTabs/>
+        </div>
     )
 };
 

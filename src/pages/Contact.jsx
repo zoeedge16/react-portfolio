@@ -1,9 +1,8 @@
 import { React } from 'react';
 
-function Contact({ setCurrentPage, currentPage }) {
+function Contact() {
     const handleSubmit = (e, page) => {
         e.preventDefault();
-        setCurrentPage(page);
     };
 
     return (
@@ -13,6 +12,14 @@ function Contact({ setCurrentPage, currentPage }) {
                 <fieldset>
                     <div>
                         <label>Name:</label>
+                        <input type="text" />
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input type="text" />
+                    </div>
+                    <div>
+                        <label>Input:</label>
                         <input type="text" />
                     </div>
                 </fieldset>

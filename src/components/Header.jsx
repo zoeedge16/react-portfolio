@@ -4,9 +4,9 @@ import  NavTabs  from "./NavTabs";
 
 function Header ({ setCurrentPage, currentPage }) {
     return (
-        <div>
+        <div className=''>
             <h1> Zoe Edge </h1>
-            <NavTabs />
+            <NavTabs setCurrentPage={setCurrentPage} currentPage={currentPage}/>
         </div>
     )
 };

@@ -6,3 +6,5 @@ This portfolio was created using react.js methods. This application allows for t
 ## Technologies
 
 [Vite](https://vitejs.dev/)
+
+[Netlify]()

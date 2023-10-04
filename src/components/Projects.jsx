@@ -4,6 +4,7 @@ import GranularGarden from '../assets/granular-garden.png';
 import NoteTaker from '../assets/note-taker.png';
 import ClassQuiz from '../assets/class-quiz.png';
 import Seo from '../assets/Horiseon-SEO.png'
+import CozyCorner from '../assets/cozy-corner.png'
 
 const projectData = [
     {
@@ -47,6 +48,13 @@ const projectData = [
         image: Seo,
         github: 'https://github.com/zoeedge16/code-refactor-seo',
         url: 'https://zoeedge16.github.io/code-refactor-seo/'
+    }
+    {
+        id: 7,
+        name: 'Cozy Corner',
+        image: CozyCorner,
+        github: 'https://github.com/zoeedge16/cozy-corner',
+        url: 'https://cozy-corner-9b91c31f9b05.herokuapp.com/'
     }
 
 ]
